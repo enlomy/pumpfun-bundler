@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Latest stable ECMAScript version
+    "module": "CommonJS", // Use latest Node.js ESM support
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allow interoperability between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Enforce file casing consistency
+    "skipLibCheck": true, // Skip type checking for declaration files
+    "outDir": "./dist", // Output directory for compiled JS files
+    "rootDir": "./src", // Root directory for TypeScript source files
+    "resolveJsonModule": true, // Allow importing JSON files
+    "allowSyntheticDefaultImports": true // Allow default imports from modules without default exports
+  },
+  "include": ["src"], // Specify which files to compile
+  "exclude": ["node_modules"] // Ignore node_modules for compilation
+}
