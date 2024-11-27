@@ -1,4 +1,4 @@
-import { Connection, Keypair, LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction, TransactionInstruction, TransactionMessage, VersionedTransaction } from "@solana/web3.js";
+import { Keypair, LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction, TransactionInstruction, TransactionMessage, VersionedTransaction } from "@solana/web3.js";
 import base58 from "bs58";
 import axios, { AxiosError } from "axios";
 import { jitoFee, treasuryFee, treasury, solanaConnection, commitmentType } from "../../config";

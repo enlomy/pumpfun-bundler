@@ -135,6 +135,20 @@ export class PumpFunSDK {
         // shortening codebase...
     }
 
+    async batchSell(
+        creator: Array<Keypair>,
+        sellAmount: Array<bigint>,
+        createTokenMetadata: CreateTokenMetadata,
+        mint: PublicKey,
+        walletCounts?: number,
+        slippageBasisPoints: bigint = 500n,
+        priorityFees?: PriorityFee,
+        commitment: Commitment = commitmentType.Confirmed,
+        finality: Finality = commitmentType.Finalized
+    ) {
+        // shortening codebase...
+    }
+
     async createTokenMetadata(create: CreateTokenMetadata) {
         const formData = new FormData();
         formData.append("file", create.file),
