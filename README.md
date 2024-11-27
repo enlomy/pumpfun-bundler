@@ -9,6 +9,7 @@ I will describe the features following
 ### - **Token Metadata Customize**: You can set metadata as you want.
 ### - **Buy Token**: Create tokens seamlessly on the Solana network.
 ### - **Sell Token**: Create tokens seamlessly on the Solana network.
+### - **Customize Token Address**: If you want you can customize token address in the prefix and suffix.
 ### - 🚀 **Token Creation and Batch Buy** 🚀: Create token and then buy tokens instantly with multi wallets.
 ### - 🚀 **Batch Sell** 🚀: Sell tokens from multi wallets.
 ### - 🚀 **Jito Service Integration** 🚀: Utilize the Jito service for efficient transaction bundling and speed optimization.
