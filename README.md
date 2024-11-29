@@ -1,4 +1,4 @@
-# 💊 Pump Fun Bundler
+# 💊 Pumpfun Bundler
 
 The **Pump Fun SDK** provides an easy-to-use interface for handling pump fun operations on Solana, specifically designed for token creation, bundle transactions, and more. This SDK integrates with the **Jito service** and **LookupTable** to facilitate efficient transaction bundling and buying, ensuring smooth user experiences and enhanced token operations.
 I will describe the features following
