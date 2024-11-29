@@ -50,7 +50,7 @@ export class PumpFunSDK {
     public GLOBAL_ACCOUNT_SEED = "global"
     public BONDING_CURVE_SEED = "bonding-curve"
     public METADATA_SEED = "metadata"
-    public GLOBAL_MINT = new PublicKey("p89evAyzjd9fphjJx7G3RFA48sbZdpGEppRcfRNpump")
+    public GLOBAL_MINT = new PublicKey("Hf7SSrAovo2p2zoVewsVuFXzEAcAFVXw5tqJpGnkHbom")
     public PROGRAM_ID = new PublicKey("6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P");
     public MPL_TOKEN_METADATA_PROGRAM_ID = new PublicKey("metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s");
     public count: number
