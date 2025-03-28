@@ -128,7 +128,7 @@ export class BondingCurveAccount {
     return s < this.realTokenReserves ? s : this.realTokenReserves;
   }
 
-  getSellPrice(amount: bigint, feeBasisPoints: bigint): bigint {
+  getSellPrice(amount: bigint, feeBasisPoints: bigint, totalTokenAmount: bigint = 0n, totalSolAmount: bigint = 0n): bigint {
     if (this.complete) {
       throw new Error("Curve is complete");
     }
@@ -139,7 +139,7 @@ export class BondingCurveAccount {
 
     // Calculate the proportional amount of virtual sol reserves to be received
     let n =
-      (amount * this.virtualSolReserves) / (this.virtualTokenReserves + amount);
+      (amount * (this.virtualSolReserves + totalSolAmount)) / (this.virtualTokenReserves + totalTokenAmount + amount);
 
     // Calculate the fee amount in the same units
     let a = (n * feeBasisPoints) / 10000n;
@@ -179,7 +179,7 @@ export class BondingCurveAccount {
       amount < this.realSolReserves ? this.realSolReserves : amount;
     let totalSellValue =
       (solTokens * this.virtualSolReserves) /
-        (this.virtualTokenReserves - solTokens) +
+      (this.virtualTokenReserves - solTokens) +
       1n;
     let fee = (totalSellValue * feeBasisPoints) / 10000n;
     return totalSellValue + fee;

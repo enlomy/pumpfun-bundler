@@ -1,4 +1,4 @@
-import { web3 } from "@project-serum/anchor"
+// import { web3 } from "@project-serum/anchor"
 import { RawMint } from "@solana/spl-token"
 import { PublicKey, VersionedTransactionResponse } from "@solana/web3.js";
 
@@ -10,7 +10,7 @@ export type Result<T, E = any | undefined> = {
   Err?: E
 }
 export type MPLTokenInfo = {
-  address: web3.PublicKey
+  address: PublicKey
   mintInfo: RawMint,
   metadata: any
 }
@@ -24,6 +24,7 @@ export type CreateTokenMetadata = {
   twitter?: string;
   telegram?: string;
   website?: string;
+  discord?: string;
 };
 
 export type TokenMetadata = {
